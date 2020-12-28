@@ -3,7 +3,7 @@ A clean, easily configurable homepage for your web browser with embeded duckduck
 To configure, simply edit the relevant css fields.
 Due to copyright restrictions, I cannot upload the background image I use in my copy, so add your own background image saved as "background.jpg" to use one.
 
-#Usage guide
+# Usage guide
 -To use this as your homepage, first ensure that both homepage.html and backrgound.html are in the same folder, one that you will not move or delete.
 
 -Then copy the full adress of homempage.html.
