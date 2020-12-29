@@ -4,6 +4,9 @@
 <html>
 <head>
 <style>
+.searchBox{
+  position: relative;
+}
 input[type=text], select, textarea {
   width: 500px; /* Full width */
   padding: 12px; /* Some padding */ 
@@ -14,14 +17,16 @@ input[type=text], select, textarea {
   outline: none;
   color: white;
   position: absolute;
-  top: 30%;
-  left: 710px;
+  left: 50%;
+  margin: 18% 0px 0px -264px;
 }
 
 body {
-  background-image: url("background.jpg");
-  background-size: 1920px;
-  background-position-y: -880px;
+  background: url("background.jpg"), #26221f;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: right bottom;
 }
 
 
@@ -30,7 +35,7 @@ body {
 </head>
 <body>
 
-<form method="get" action="https://duckduckgo.com/">
+<form method="get" action="https://duckduckgo.com/" class="searchBox">
     <input type="text" name="q" placeholder="Search" autocomplete="off" autofocus="autofocus">
 <!--     <input type="submit" value="Search"> -->
 </form>
