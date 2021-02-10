@@ -1,12 +1,49 @@
-
 <!DOCTYPE html>
 
 <html>
 <head>
 <style>
+body {
+  background: url("cosmonaut2.jpg"), #26221f;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: right bottom;
+}
+
+nav {
+  width: 100%;
+  margin: 0px 0px 0px -8px;
+  background: transparent;
+  opacity: 0.75;
+  position: fixed;
+  bottom: 0;
+  color: #cccccc;
+  clip-path: circle(24px at 50% 98%);
+  transition: all 0.5s;
+}
+
+nav:hover {
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+  background: black;
+  color: transparent;
+  clip-path: circle(110% at 50% 100%);
+}
+
+.navicon {
+  padding: 0% 0%;
+  margin: 0px 0px 0px -26px;
+  cursor: pointer;
+  transform-origin: 0% 100%;
+  positiion: absolute;
+  bottom: 0;
+}
+
 .searchBox{
   position: relative;
 }
+
 input[type=text], select, textarea {
   width: 500px; /* Full width */
   padding: 12px; /* Some padding */ 
@@ -15,30 +52,103 @@ input[type=text], select, textarea {
   box-sizing: content-box;
   background-color: transparent;
   outline: none;
-  color: white;
+  color: #cccccc;
   position: absolute;
   left: 50%;
   margin: 18% 0px 0px -264px;
 }
-
-body {
-  background: url("background.jpg"), #26221f;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-  background-position: right bottom;
+.grid-container {
+  width: 100%;
+  margin: 0px 0px 0px 13px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 20px 8%;
+}
+.menuButton {
+  width: 90%;
+  height: 48px;
+  border: none;
+  background-color: #cccccc;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 32px;
+  opacity: 1;
+  transition: all 0.2s;
 }
 
+.menuButton:hover {
+  width: 100%;
+  height: 50px;
+  margin: -2px 0px 0px -5%;
+  font-size: 40px;
+  background-color: white;
+  color: orange;
+}
+
+.bigMenuButton {
+  width: 97.8%;
+  grid-column: 2 / span 3;
+}
+
+.bigMenuButton:hover {
+  width: 110%;
+  margin: -2px 0px 0px -6.05%;
+
+}
+
+.bar {
+  width: 100%;
+  height: 32px;
+  grid-column: 1 / span 5;
+  text-align: center;
+  font-size: 24px;
+}
 
 </style>
 <title>Home</title>
 </head>
 <body>
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <form method="get" action="https://duckduckgo.com/" class="searchBox">
     <input type="text" name="q" placeholder="Search" autocomplete="off" autofocus="autofocus">
 <!--     <input type="submit" value="Search"> -->
 </form>
 
+<nav>
+<div class="grid-container">
+  <div class="bar"><span></span></div>
+  <button class="menuButton" onclick="window.location.href='https://www.google.co.uk/maps';"><span><i class="lar la-map"></i></span></button>
+  <button class="menuButton" onclick="window.location.href='https://www.theguardian.com/uk';"><span> <i class="las la-newspaper"></i></span></button>
+  <button class="menuButton" onclick="window.location.href='https://plato.stanford.edu/';"><span>&#x03A6 </span></button>
+  <button class="menuButton" onclick="window.location.href='https://lutris.net/';"><span><i class="las la-gamepad"></i></span></button>
+  <button class="menuButton" onclick="window.location.href='https://github.com/';"><span><i class="lab la-github"></i></span></button>
+  <button class="menuButton" onclick="window.location.href='https://images.google.com/';"><span><i class="material-icons">image_search</i></span></button>
+  <button class="menuButton" onclick="window.location.href='https://www.youtube.com/?gl=GB&hl=en-GB';"><span><i class="lab la-youtube"></i></span></button>
+  <button class="menuButton" onclick="window.location.href='https://www.physicsandmathstutor.com/';"><span><i class="las la-atom"></i></span></button>
+  <button class="menuButton" onclick="window.location.href='https://www.chess.com/';"><span><i class="las la-chess"></i></span></button>
+  <button class="menuButton" onclick="window.location.href='https://help.ubuntu.com/lts/ubuntu-help/index.html';"><span><i class="lab la-ubuntu"></i></span></button>
+  <button class="menuButton" onclick="window.location.href='https://translate.google.com/';"><span><i class="las la-language"></i></span></button>
+  <button class="menuButton" onclick="window.location.href='https://twitter.com/';"><span><i class="lab la-twitter"></i></span></button>
+  <button class="menuButton" onclick="window.location.href='placeholder';"><span><i class="las la-calculator"></i></span></button>
+  <button class="menuButton" onclick="window.location.href='https://www.warzone.com/MultiPlayer/';"><span><i class="las la-globe-europe"></i></span></button>
+  <button class="menuButton" onclick="window.location.href='https://extensions.gnome.org/';"><span><i class="las la-puzzle-piece"></i></span></button>
+  <button class="menuButton" onclick="window.location.href='https://mt.tahdah.me/Account/Login?ReturnUrl=%2F';"><span><i class="las la-mountain"></i></span></button>
+  <button class="menuButton" onclick="window.location.href='https://www.reddit.com/';"><span><i class="lab la-reddit"></i></span></button>
+  <button class="menuButton"><span><i class="las la-envelope"></i></span></button>
+  <button class="menuButton" onclick="window.location.href='http://orteil.dashnet.org/cookieclicker/';"><span><i class="las la-cookie"></i></button>
+  <button class="menuButton" onclick="window.location.href='https://stackoverflow.com/';"><span><i class="lab la-stack-overflow"></i></span></span></button>
+  <button class="menuButton" onclick="window.location.href='https://en.wikipedia.org/wiki/Main_Page';"><span><i class="lab la-wikipedia-w"></i></span></span></button>
+  <button class="menuButton bigMenuButton" onclick="window.location.href='placeholder';"><span><i class="las la-ellipsis-h"></i></span></span></button>
+  <button class="menuButton" onclick="window.open('PLACEHOLDER','_blank')"><span><i class="las la-plus"></i></span></span></button> 
+  <div class="bar"><span><div class="navicon" ><i class="las la-angle-double-up"></i></div></span></div>
+</div>
+
+
+
+
+</nav>
 </body>
 </html>
