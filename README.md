@@ -1,7 +1,7 @@
 # SimpleHomePage
 A clean, easily configurable homepage for your web browser with embeded duckduckgo search box.
 To configure, simply edit the relevant css fields.
-Due to copyright restrictions, I cannot upload the background image I use in my copy, so add your own background image saved as "background.jpg" to use one.
+Due to copyright restrictions, I cannot upload the background image I use in my copy, so add your own background image saved as "background.jpg" to use one. However, the image that I have used was a cropped version of this: https://www.wallpaperflare.com/outer-space-russia-astronauts-ussr-laika-yuri-gagarin-aircraft-space-hd-art-wallpaper-hnzcu
 
 # Usage guide
 -To use this as your homepage, first ensure that both homepage.html and backrgound.html are in the same folder, one that you will not move or delete.
